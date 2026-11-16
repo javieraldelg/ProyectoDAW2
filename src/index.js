@@ -12,10 +12,5 @@ app.listen(PORT, () => {
     console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });
 
-while(true) {
-    console.log("Hello world");
-}
 
-while(true) {
-    console.log("Bye world");
-}
+console.log("fernando albañil")

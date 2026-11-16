@@ -1,5 +1,13 @@
-let oscar = []
+import express from "express";
+import routes from "./routes/index.js";
+const app = express();
 
-for(let i;i<200;i++){
-    oscar[i]=i;
-}
+app.use(express.json());
+
+app.use("/api", routes);
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log(`Servidor escuchando en http://localhost:${PORT}`);
+});
